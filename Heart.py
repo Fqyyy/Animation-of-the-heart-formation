@@ -46,7 +46,7 @@ class HeartFormationAnimation:
             self.target_points.append((x, y))
 
     def create_stars(self):
-        for _ in range(200):  # Создаем 200 звезд
+        for _ in range(200):
             x = random.randint(0, self.width)
             y = random.randint(0, self.height)
             size = random.randint(1, 3)
@@ -82,7 +82,7 @@ class HeartFormationAnimation:
         else:
             self.color_gradient_index = 0
             self.blink_heart_gradient()
-            self.start_pulse()  # Начинаем пульсацию сердца
+            self.start_pulse()
 
     def blink_heart_gradient(self):
         gradient_colors = [
