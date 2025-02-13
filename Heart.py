@@ -22,7 +22,7 @@ class HeartFormationAnimation:
         self.max_steps = 40
         self.create_random_points()
         self.create_heart_target_points()
-        self.create_stars()  # Создаем звезды на фоне
+        self.create_stars()
         self.animate_chaos()
         self.root.bind('<Escape>', self.close_window)
         self.pulse_step = 0
